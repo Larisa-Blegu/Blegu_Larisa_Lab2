@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Blegu_Larisa_lab2.Migrations
 {
     [DbContext(typeof(Blegu_Larisa_lab2Context))]
-    [Migration("20231017204601_Author")]
+    [Migration("20231029220421_Author")]
     partial class Author
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

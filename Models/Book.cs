@@ -10,6 +10,7 @@ namespace Blegu_Larisa_lab2.Models
 
         [Display(Name = "Book Title")]
         public string Title { get; set; }
+        public int? AuthorID { get; set; }
         public Author? Author { get; set; }
 
         [Column(TypeName = "decimal(6, 2)")]
@@ -19,5 +20,8 @@ namespace Blegu_Larisa_lab2.Models
         public DateTime PublishingDate { get; set; }
         public int? PublisherID { get; set; }
         public Publisher? Publisher { get; set; }
+
+        public ICollection<BookCategory>? BookCategories { get; set; }
+
     }
 }

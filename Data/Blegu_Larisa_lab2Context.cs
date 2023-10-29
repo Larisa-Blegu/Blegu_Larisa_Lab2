@@ -17,5 +17,9 @@ namespace Blegu_Larisa_lab2.Data
         public DbSet<Blegu_Larisa_lab2.Models.Book> Book { get; set; } = default!;
 
         public DbSet<Blegu_Larisa_lab2.Models.Publisher>? Publisher { get; set; }
+
+        public DbSet<Blegu_Larisa_lab2.Models.Author>? Author { get; set; }
+
+        public DbSet<Blegu_Larisa_lab2.Models.Category>? Category { get; set; }
     }
 }
