@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using Blegu_Larisa_lab2.Data;
 using Blegu_Larisa_lab2.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Blegu_Larisa_lab2.Pages.Books
 {
+    [Authorize(Roles = "Admin")]
     public class DetailsModel : PageModel
     {
         private readonly Blegu_Larisa_lab2.Data.Blegu_Larisa_lab2Context _context;
